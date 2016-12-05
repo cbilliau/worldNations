@@ -1,0 +1,9 @@
+/*.CountryRow:hover {
+  background-color: lightblue;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.CountryRow:active {
+  background-color: dodgerblue;
+}*/
