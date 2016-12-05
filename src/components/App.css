@@ -1,4 +1,4 @@
-/*.App {
+.App {
   text-align: center;
 }
 
@@ -8,14 +8,14 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: steelblue;
   height: 50px;
   padding: 20px;
   color: white;
 }
 
 .App-text {
-  color: #222;
+  color: darkslategrey;
 }
 
 .App-intro {
@@ -26,28 +26,3 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
-
-nav ul {
-  padding: 0;
-  margin: 25px 0;
-}
-
-nav li {
-  display: inline-block;
-  padding: 0 15px;
-}
-
-nav li:hover {
-  text-decoration: underline;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-nav a:visited {
-  color: white;
-}
-
-nav li:not(:first-child) {
-  border-left: 1px solid white;
-}*/

@@ -26,7 +26,12 @@ class CountryRow extends Component {
             <tr onClick={ () => this.handleClick() } className="CountryRow">
               <td>{country.region}</td>
               <td>{country.name}</td>
-              <td>{this.state.renderDetails ? <CountryDetail country={country}/>: null}</td>
+              <td>{this.state.renderDetails ? <CountryDetail country={country.alpha2Code}/>: null}</td>
+              <td>{this.state.renderDetails ? <CountryDetail country={country.capital}/>: null}</td>
+              <td>{this.state.renderDetails ? <CountryDetail country={country.population}/>: null}</td>
+              <td>{this.state.renderDetails ? <CountryDetail country={country.area}/>: null}</td>
+              <td>{this.state.renderDetails ? <CountryDetail country={country.timezones}/>: null}</td>
+              <td>{this.state.renderDetails ? <CountryDetail country={country.languages}/>: null}</td>
             </tr>
         );
     }

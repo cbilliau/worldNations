@@ -8,13 +8,18 @@ const CountryList = ({countries}) => {
         return <div className="CountryList is-loading">Loading...</div>;
 
     return (
-        <div className="CountryList">
+        <div className="CountryList App-text">
           <table>
             <thead>
               <tr>
                 <th>Region</th>
                 <th>Name</th>
-                <th>Details</th>
+                <th>Alpha2Code</th>
+                <th>Capital</th>
+                <th>Population</th>
+                <th>Area</th>
+                <th>TimeZone</th>
+                <th>Languages</th>
               </tr>
             </thead>
             <tbody>

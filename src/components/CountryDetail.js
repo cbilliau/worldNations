@@ -12,7 +12,9 @@ class CountryDetail extends Component {
         let country = this.props.country;
         console.log('Country Details: ', country);
         return (
-            <span>{country}</span>
+
+            <div>{country}</div>
+
         );
     }
 }
