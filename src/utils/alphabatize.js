@@ -1,3 +1,5 @@
+// This function sorts and array by region key and then by name key
+
 export default function(arr) {
 
     let sortByCriteria = (data, criteria) => {

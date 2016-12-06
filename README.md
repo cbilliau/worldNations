@@ -26,11 +26,11 @@ This app was visually designed to complete the exercise as given while being vis
 
 The app is built using the [Facebook Incubator](https://github.com/facebookincubator/create-react-app) for React. Information specific to the use of and adaptation of the incubator can be found at the link in the credits section below.
 
-The app's functionality is based around the [component pattern](http://reactpatterns.com/#container-component). The basis of this patter is that the container does data fetching and then renders its corresponding sub-components. A very well written explanation of the component pattern can be found [here](https://medium.com/@learnreact/container-components-c0e67432e005#.jm3h1gm7e).
+The app's functionality is based around the [component pattern](http://reactpatterns.com/#container-component). The basis of this pattern is that the container performs data fetching and then renders its corresponding sub-components. A well written explanation of the component pattern can be found [here](https://medium.com/@learnreact/container-components-c0e67432e005#.jm3h1gm7e).
 
 The API is called via the [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) which uses JavaScript Promises to handle results/callbacks.
 
-Sorting functions are placed in there own modules inside the utils folder under src. Separating these functions allows for their reuse anywhere.
+Sorting functions are placed in there own modules inside the utils folder under src. Separating these functions allows for their reuse.
 
 
 ### Installing
