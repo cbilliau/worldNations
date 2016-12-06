@@ -1,17 +1,26 @@
 export default function(arr) {
-  console.log(arr);
-  // let sorted = arr.sort((a, b) => (a.region) - (b.region));
 
-  let compare = (a,b) => {
-  if (a.region < b.region)
-    return -1;
-  if (a.region > b.region)
-    return 1;
-  return 0;
-  }
+    let sortByCriteria = (data, criteria) => {
+      // credit: http://tinyurl.com/h7ymowx
+        return data.sort(function(a, b) {
 
-  let regionSorted =  arr.sort(compare);
+            var i,
+                iLen,
+                aChain,
+                bChain;
 
-  return regionSorted;
+            i = 0;
+            iLen = criteria.length;
+            for (i; i < iLen; i++) {
+                aChain += a[criteria[i]];
+                bChain += b[criteria[i]];
+            }
 
-};
+            return aChain.localeCompare(bChain);
+        });
+    }
+
+    let sorted = sortByCriteria(arr, ['region', 'name']);
+
+    return sorted;
+}

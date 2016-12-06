@@ -1,11 +1,20 @@
 # World Nations App - React App
 
-<!-- ![screenshot](/public/assets/grab1.png "screenshot") -->
+![screenshot](/public/assets/worldNations.png "screenshot")
 
 
 ## Overview
 
-This app demonstrates the use of the MEAN stack in monitoring connected devices in realtime. The app displays two boxes showing the number of installed and offline devices. As device status changes, the display is updated. A function has been written into the server to simulate status changes. This function changes status of the offline devices every 5 seconds.
+This app demonstrates the use of React in collecting, displaying and sorting collected via a RESTful API. The app displays a table containing all the countries of the world sorted by region then name. Additional data for each country is displayed upon clicking anywhere in the row for that country. Additional data displayed includes:
+
+* Name
+* alpha2Code
+* Capital
+* Region
+* Population
+* Area (in km2)
+* Number of timezones
+* List of languages spoken
 
 
 ## Design

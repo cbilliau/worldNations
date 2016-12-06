@@ -17,18 +17,11 @@ class CountriesContainer extends Component {
     }
 
     render() {
-        // const {params} = this.props;
-
-        // if (params)
-        //     return (<CountryDetail country={this.state.countries.find(c => c === params)}/>);
-
         return (
             <div>
               <CountryList countries={this.state.countries}/>
             </div>
-
         )
-
     }
 }
 
