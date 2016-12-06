@@ -1,6 +1,6 @@
 # World Nations App - React App
 
-![screenshot](/public/assets/worldNations.png "screenshot")
+![screenshot](/public/assets/WorldNations.png "screenshot")
 
 
 ## Overview
