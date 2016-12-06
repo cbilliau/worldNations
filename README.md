@@ -1,4 +1,4 @@
-# World Nations App - React App
+# World Nations - A React App
 
 ![screenshot](/public/assets/WorldNations.png "screenshot")
 
