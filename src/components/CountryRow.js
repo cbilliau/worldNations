@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './CountryRow.css';
 
+import { numberfy } from '../utils';
 import CountryDetail from './CountryDetail';
 
 // import { numberize } from '../utils';
@@ -21,7 +22,6 @@ class CountryRow extends Component {
 
     render() {
         let country = this.props.country;
-        console.log(this.state.renderDetails);
         return (
             <tr onClick={ () => this.handleClick() } className="CountryRow">
               <td>{country.region}</td>
@@ -30,7 +30,7 @@ class CountryRow extends Component {
               <td>{this.state.renderDetails ? <CountryDetail country={country.capital}/>: null}</td>
               <td>{this.state.renderDetails ? <CountryDetail country={country.population}/>: null}</td>
               <td>{this.state.renderDetails ? <CountryDetail country={country.area}/>: null}</td>
-              <td>{this.state.renderDetails ? <CountryDetail country={country.timezones}/>: null}</td>
+              <td>{this.state.renderDetails ? <CountryDetail country={ numberfy(country.timezones) }/> : null }</td>
               <td>{this.state.renderDetails ? <CountryDetail country={country.languages}/>: null}</td>
             </tr>
         );

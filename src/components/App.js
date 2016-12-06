@@ -9,10 +9,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h2>Countries & Capitals</h2>
-          <CountriesContainer />
         </div>
         <div className="App-text">
-          {this.props.children}
+          <CountriesContainer />
         </div>
       </div>
     );

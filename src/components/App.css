@@ -2,20 +2,20 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
   background-color: steelblue;
-  height: 50px;
-  padding: 20px;
+  height: 75px;
+  /*padding: 20px;*/
   color: white;
+  position:fixed;
+  width:100%;
+  top: 0;
 }
 
 .App-text {
   color: darkslategrey;
+  margin: 75px 20px 0 20px;
 }
 
 .App-intro {

@@ -7,3 +7,17 @@
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
+
+table {
+    width: 100%;
+    border: "0";
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+    min-width: 75px;
+    max-width: 75px;
+}
