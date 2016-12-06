@@ -19,23 +19,16 @@ This app demonstrates the use of React in collecting, displaying and sorting col
 
 ## Design
 
-This app was visually designed to match the sample image provided in the task's instructions. Visual design was further enhanced by inspection of the company's website and, where practical, features were copied to correspond and match the company's current UI practices.
+This app was visually designed to complete the exercise as given while being visually pleasant convey data.
 
 
 ## Tech notes
 
-* The app is built using Node and Angular. The front-end is built using AngularJS, the back-end using NodeJS with ExpressJS as the web server and Socket.io for real-time event-based communication.
+The app is built using the Facebook Incubator for React. Information specific to the use of and adaptation of the incubator can be found at the link in the credits section below.
 
-* Bootstrap was used as the front-end framework of choice.
+The app's functionality is based around the [*component pattern*](http://reactpatterns.com/#container-component). The basis of this patter is that the container does data fetching and then renders its corresponding sub-components. A very well written of the component pattern can be found [here](https://medium.com/@learnreact/container-components-c0e67432e005#.jm3h1gm7e).
 
-* Socket.io is used in the server to establish event-based communication between the server and client. A 5 second interval is triggered upon page-load which increases the variable holding the number of offline devices. As the variable is changed an event is emitted to the client.
-
-* An Angular app on the client establishes a connection with socket.io on the server. As socket.io emits data to the client, Angular binds the changed data to the view via the $apply function.
-
-* Express is used to serve static files which include all files in the public and node_modules folders.
-
-* This app uses a css file to provide additional styles not included with bootstrap.
-
+Sorting functions were taken out of components and placed in there own modules inside the *utils* folder under "src". These modules now able to be called into any component as needed.
 
 
 ### Installing
@@ -46,6 +39,13 @@ A step by step series of examples that tell you have to get a development env ru
 
 2. cd into the project directory and run 'npm install'.
 
-4. Run 'npm start' or 'node server.js'.
+4. Run 'npm start'.
 
-5. Open a browser at localhost:8080.
+5. Browser will automatically open to localhost:3000.
+
+
+### Credits
+
+- REST Countries https://restcountries.eu/
+
+- Facebook Incubator https://github.com/facebookincubator/create-react-app

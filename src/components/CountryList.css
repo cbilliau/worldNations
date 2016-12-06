@@ -10,10 +10,10 @@
 
 table {
     width: 100%;
-    border: "0";
 }
 
 th, td {
+    overflow: auto;
     display: grid;
     padding: 5px;
     text-align: left;

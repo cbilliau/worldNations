@@ -5,12 +5,12 @@ import CountryRow from './CountryRow';
 
 const CountryList = ({countries}) => {
     if (countries.length < 1)
-        return <div className='CountryList is-loading'>Loading...</div>;
+        return <div className='CountryList is-loading'><br/><h2>Loading...</h2></div>;
 
     return (
         <div className='CountryList App-text'>
-          <table>
-            <thead className='Fixed'>
+          <table border="0">
+            <thead>
               <tr>
                 <th>Region</th>
                 <th>Name</th>
